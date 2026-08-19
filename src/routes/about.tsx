@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import storyAsset from "@/assets/story.jpg.asset.json";
+import storyImage from "@/assets/story.jpg";
 import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/about")({
@@ -34,7 +34,7 @@ function About() {
       </section>
 
       <img
-        src={storyAsset.url}
+        src={storyImage}
         alt="Artisan weaving gold zari thread on a traditional handloom"
         className="mx-auto aspect-[21/9] w-full max-w-6xl object-cover px-5 sm:px-8"
         loading="lazy"
